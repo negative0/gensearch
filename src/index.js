@@ -33,8 +33,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/gen-search" element={<GenSearch />} />
-      <Route path="*" element={<Navigate to="/gen-search" replace />} />
+      <Route path="/" element={<GenSearch />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   </BrowserRouter>
 );
