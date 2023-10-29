@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.346f38f2.css",
-    "main.js": "/static/js/main.793498b1.js",
-    "static/media/background1.png": "/static/media/background1.f8d072c2c21b50001116.png",
-    "static/media/farid-askerov.jpg": "/static/media/farid-askerov.b226de101c2ca94f5344.jpg",
-    "static/media/nucleo-icons.eot": "/static/media/nucleo-icons.bd42d77b9672555647d1.eot",
-    "static/media/nucleo-icons.ttf": "/static/media/nucleo-icons.4466aeec3386b965a232.ttf",
-    "static/media/nucleo-icons.woff": "/static/media/nucleo-icons.8e954b749f951b654fc6.woff",
-    "static/media/nucleo-icons.woff2": "/static/media/nucleo-icons.ec16bc4cc4526801004d.woff2",
-    "static/media/shopify_logo.png": "/static/media/shopify_logo.1c8d2c7a39659f4d0ccd.png",
-    "static/media/default-skin.svg": "/static/media/default-skin.da360a6878714e797cbb.svg",
-    "index.html": "/index.html",
-    "main.346f38f2.css.map": "/static/css/main.346f38f2.css.map",
-    "main.793498b1.js.map": "/static/js/main.793498b1.js.map"
+    "main.css": "./static/css/main.de562abc.css",
+    "main.js": "./static/js/main.afd6128b.js",
+    "static/media/background1.png": "./static/media/background1.f8d072c2c21b50001116.png",
+    "static/media/farid-askerov.jpg": "./static/media/farid-askerov.b226de101c2ca94f5344.jpg",
+    "static/media/nucleo-icons.eot": "./static/media/nucleo-icons.bd42d77b9672555647d1.eot",
+    "static/media/nucleo-icons.ttf": "./static/media/nucleo-icons.4466aeec3386b965a232.ttf",
+    "static/media/nucleo-icons.woff": "./static/media/nucleo-icons.8e954b749f951b654fc6.woff",
+    "static/media/nucleo-icons.woff2": "./static/media/nucleo-icons.ec16bc4cc4526801004d.woff2",
+    "static/media/shopify_logo.png": "./static/media/shopify_logo.1c8d2c7a39659f4d0ccd.png",
+    "static/media/default-skin.svg": "./static/media/default-skin.da360a6878714e797cbb.svg",
+    "index.html": "./index.html",
+    "main.de562abc.css.map": "./static/css/main.de562abc.css.map",
+    "main.afd6128b.js.map": "./static/js/main.afd6128b.js.map"
   },
   "entrypoints": [
-    "static/css/main.346f38f2.css",
-    "static/js/main.793498b1.js"
+    "static/css/main.de562abc.css",
+    "static/js/main.afd6128b.js"
   ]
 }
