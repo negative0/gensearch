@@ -15,12 +15,13 @@ import {
   Carousel,
   CarouselItem,
   CarouselIndicators,
+  UncontrolledTooltip,
 } from "reactstrap";
 
 // core components
 const items = [
   {
-    src: "url(" + require("assets/img/sections/section-header-1.jpg") + ")",
+    src: "url(" + require("assets/img/background1.png") + ")",
     content: (
       <Container>
         <Row>
@@ -58,34 +59,43 @@ const items = [
               </Col>
             </Row>
             <div className="buttons">
-              <Button
-                className="btn-round"
-                color="danger"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-                size="lg"
-              >
-                Read More
-              </Button>
+              <h5>Supported Platforms:</h5>
               <Button
                 className="btn-neutral btn-just-icon"
                 color="link"
-                href="#pablo"
                 onClick={(e) => e.preventDefault()}
+                id="icon-wordpress"
               >
                 <i className="fa fa-wordpress" />
               </Button>
+              <UncontrolledTooltip placement="bottom" target="icon-wordpress">
+                Wordpress
+              </UncontrolledTooltip>
               <Button
                 className="btn-neutral btn-just-icon p-0"
                 color="link"
-                href="#pablo"
                 onClick={(e) => e.preventDefault()}
+                id="icon-shopify"
               >
                 <img
                   style={{ width: "18px", height: "18px" }}
                   src={require("assets/img/shopify_logo.png")}
                 />
               </Button>
+              <UncontrolledTooltip placement="bottom" target="icon-shopify">
+                Shopify
+              </UncontrolledTooltip>
+              <Button
+                className="btn-neutral btn-just-icon p-0"
+                color="link"
+                onClick={(e) => e.preventDefault()}
+                id="icon-custom"
+              >
+                <i className="fa fa-rocket" />
+              </Button>
+              <UncontrolledTooltip placement="bottom" target="icon-custom">
+                Your own custom platform
+              </UncontrolledTooltip>
             </div>
           </Col>
         </Row>
@@ -149,32 +159,36 @@ function SectionHeader() {
                 </CarouselItem>
               );
             })}
-            <a
-              className="left carousel-control carousel-control-prev"
-              data-slide="prev"
-              href="#pablo"
-              onClick={(e) => {
-                e.preventDefault();
-                previous();
-              }}
-              role="button"
-            >
-              <span className="fa fa-angle-left" />
-              <span className="sr-only">Previous</span>
-            </a>
-            <a
-              className="right carousel-control carousel-control-next"
-              data-slide="next"
-              href="#pablo"
-              onClick={(e) => {
-                e.preventDefault();
-                next();
-              }}
-              role="button"
-            >
-              <span className="fa fa-angle-right" />
-              <span className="sr-only">Next</span>
-            </a>
+            {items.length > 1 && (
+              <>
+                <a
+                  className="left carousel-control carousel-control-prev"
+                  data-slide="prev"
+                  href="#pablo"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    previous();
+                  }}
+                  role="button"
+                >
+                  <span className="fa fa-angle-left" />
+                  <span className="sr-only">Previous</span>
+                </a>
+                <a
+                  className="right carousel-control carousel-control-next"
+                  data-slide="next"
+                  href="#pablo"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    next();
+                  }}
+                  role="button"
+                >
+                  <span className="fa fa-angle-right" />
+                  <span className="sr-only">Next</span>
+                </a>
+              </>
+            )}
           </Carousel>
         </div>
       </div>
