@@ -69,7 +69,8 @@ const items = [
             <h1 className="title">Genlabs Search™ Search</h1>
             <h5>
               Now you can add generative AI search and filters to your
-              e-commerce website in under 10 minutes.
+              e-commerce website in under 10 minutes. Get started with your free
+              plan today.
             </h5>
             <br />
             <Row>
