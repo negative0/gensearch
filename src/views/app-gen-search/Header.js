@@ -66,13 +66,23 @@ const items = [
       <Container>
         <Row>
           <Col className="text-left" md="6">
-            <h1 className="title">Genlabs Search™ Search</h1>
+            <h1 className="title">Genlabs Search™</h1>
             <h5>
-              Now you can add generative AI search and filters to your
-              e-commerce website in under 10 minutes. Get started with your free
-              plan today.
+              Now you can add generative AI search and interactive product
+              filters to your e-commerce website in under 10 minutes. <br />
+              Make your complex and configurable products easy to find and
+              discover.
             </h5>
-            <br />
+            <p>
+              Examples:
+              <br /> - I want a gift for my mom for her 60th birthday
+              <br />- I want a laptop for gaming which can run Apex Legends
+              <br />- I want a phone with the best camera
+              <br /> or something more specific like:
+              <br />- I want a laptop with a 4k screen and 16gb of ram with
+              color accurate display
+            </p>
+            <p>Get started with your free plan today.</p>
             <Row>
               <Col className="ml-auto mr-auto" md="12">
                 <Card className="card-raised card-form-horizontal no-transition">
@@ -158,7 +168,7 @@ function SectionHeader() {
   return (
     <>
       {/* ********* HEADER 3 ********* */}
-      <div className="header-3">
+      <div className="header-1">
         <div className="page-carousel">
           <div className="filter" />
           <Carousel activeIndex={activeIndex} next={next} previous={previous}>

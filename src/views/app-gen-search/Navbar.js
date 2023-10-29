@@ -60,10 +60,10 @@ function ColorNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand id="navbar-brand" to="/index" tag={Link}>
-              Build Gen Technologies
+              Gen Labs India
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
-              Build Gen Technologies
+              Designed and Coded by Gen Labs
             </UncontrolledTooltip>
             <button
               className="navbar-toggler"
