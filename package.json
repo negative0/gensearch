@@ -26,7 +26,9 @@
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css",
-    "minify-sass": "sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.min.css --style compressed"
+    "minify-sass": "sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.min.css --style compressed",
+    "predeploy" : "yarn run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -52,5 +54,8 @@
   },
   "overrides": {
     "svgo": "3.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
