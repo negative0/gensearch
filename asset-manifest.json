@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.de562abc.css",
-    "main.js": "./static/js/main.34abd6e0.js",
+    "main.js": "./static/js/main.3923c74c.js",
     "static/media/background1.png": "./static/media/background1.f8d072c2c21b50001116.png",
     "static/media/farid-askerov.jpg": "./static/media/farid-askerov.b226de101c2ca94f5344.jpg",
     "static/media/nucleo-icons.eot": "./static/media/nucleo-icons.bd42d77b9672555647d1.eot",
@@ -12,10 +12,10 @@
     "static/media/default-skin.svg": "./static/media/default-skin.da360a6878714e797cbb.svg",
     "index.html": "./index.html",
     "main.de562abc.css.map": "./static/css/main.de562abc.css.map",
-    "main.34abd6e0.js.map": "./static/js/main.34abd6e0.js.map"
+    "main.3923c74c.js.map": "./static/js/main.3923c74c.js.map"
   },
   "entrypoints": [
     "static/css/main.de562abc.css",
-    "static/js/main.34abd6e0.js"
+    "static/js/main.3923c74c.js"
   ]
 }
