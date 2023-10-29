@@ -6,12 +6,9 @@ import classnames from "classnames";
 import Headroom from "headroom.js";
 // reactstrap components
 import {
-  Button,
   Collapse,
   NavbarBrand,
   Navbar,
-  NavItem,
-  Nav,
   Container,
   UncontrolledTooltip,
 } from "reactstrap";

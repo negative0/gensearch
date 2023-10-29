@@ -18,6 +18,46 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
+import { useForm, ValidationError } from "@formspree/react";
+
+function EmailForm() {
+  const [state, handleSubmit] = useForm("xpzgbewl");
+  if (state.succeeded) {
+    return <p>Thanks for signing up!</p>;
+  }
+  return (
+    <Form onSubmit={handleSubmit}>
+      <Row>
+        <Col md="10">
+          <FormGroup>
+            <Input
+              defaultValue=""
+              placeholder="Enter your email to get a link"
+              type="email"
+              name="email"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </FormGroup>
+        </Col>
+        <Col md="2">
+          <Button
+            block
+            color="danger"
+            type="submit"
+            disabled={state.submitting}
+          >
+            <i className="fa fa-send" />
+          </Button>
+        </Col>
+      </Row>
+    </Form>
+  );
+}
+
 // core components
 const items = [
   {
@@ -26,34 +66,17 @@ const items = [
       <Container>
         <Row>
           <Col className="text-left" md="6">
-            <h1 className="title">BuildGen (TM) Search</h1>
+            <h1 className="title">Genlabs Search™ Search</h1>
             <h5>
-              Now you can add generative AI search to your ecommerce app in 10
-              minutes.
+              Now you can add generative AI search and filters to your
+              e-commerce website in under 10 minutes.
             </h5>
             <br />
             <Row>
               <Col className="ml-auto mr-auto" md="12">
                 <Card className="card-raised card-form-horizontal no-transition">
                   <CardBody>
-                    <Form action="" method="">
-                      <Row>
-                        <Col md="10">
-                          <FormGroup>
-                            <Input
-                              defaultValue=""
-                              placeholder="Enter your email to get a link"
-                              type="text"
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col md="2">
-                          <Button block color="danger" type="button">
-                            <i className="fa fa-send" />
-                          </Button>
-                        </Col>
-                      </Row>
-                    </Form>
+                    <EmailForm />
                   </CardBody>
                 </Card>
               </Col>
@@ -80,6 +103,7 @@ const items = [
                 <img
                   style={{ width: "18px", height: "18px" }}
                   src={require("assets/img/shopify_logo.png")}
+                  alt="Shopify"
                 />
               </Button>
               <UncontrolledTooltip placement="bottom" target="icon-shopify">
