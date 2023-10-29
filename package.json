@@ -30,7 +30,7 @@
     "compile-sass": "sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css",
     "minify-sass": "sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.min.css --style compressed",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "echo search.genlabs.in > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
